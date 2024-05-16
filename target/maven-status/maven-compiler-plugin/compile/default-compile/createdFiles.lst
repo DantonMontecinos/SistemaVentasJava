@@ -1,0 +1,8 @@
+com\mycompany\sistemaweb\resources\JakartaEE10Resource.class
+com\mycompany\sistemaweb\JakartaRestConfiguration.class
+Controlador\Test.class
+Controlador\Controlador.class
+config\Conexion.class
+Controlador\Validar.class
+Modelo\EmpleadoDAO.class
+Modelo\Empleado.class
