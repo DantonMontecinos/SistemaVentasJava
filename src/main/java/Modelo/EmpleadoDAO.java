@@ -31,9 +31,11 @@ public class EmpleadoDAO {
            
              while(rs.next()){
                 empleado1.setId(rs.getInt("IdEmpleado"));
+                empleado1.setDni(rs.getString("Dni"));
+                empleado1.setNombre(rs.getString("Nombres"));
+                empleado1.setTel(rs.getString("Telefono"));
+                empleado1.setEstado(rs.getString("Estado"));
                 empleado1.setUser(rs.getString("User"));
-                empleado1.setUser(rs.getString("Dni"));
-                empleado1.setUser(rs.getString("Nombres"));
               
             }
          

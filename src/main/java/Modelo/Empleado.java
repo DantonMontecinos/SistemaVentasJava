@@ -11,7 +11,7 @@ package Modelo;
 public class Empleado {
     int id;
     String dni;
-    String nombre;
+    public String nombre;
     String tel;
     String estado;
     String user;

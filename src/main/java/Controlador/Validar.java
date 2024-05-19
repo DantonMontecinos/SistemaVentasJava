@@ -60,7 +60,13 @@ public class Validar extends HttpServlet {
             String user = request.getParameter("txtuser");
             String pass = request.getParameter("txtpass");
             emp= empleadoDao.Validar(user, pass);
+          
             if(emp.getUser()!=null){
+          
+                //se imprime el usuario que se loggeo
+    
+                 request.setAttribute("datos",emp);
+                
                 request.getRequestDispatcher("Controlador?accion=Principal").forward(request, response);
             }else{
                 request.getRequestDispatcher("index.jsp").forward(request, response);
@@ -69,7 +75,7 @@ public class Validar extends HttpServlet {
         }else{
             request.getRequestDispatcher("index.jsp").forward(request, response);
         }        
-        
+         
     }
 
   

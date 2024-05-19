@@ -4,15 +4,13 @@
  */
 package config;
 
+import Modelo.Empleado;
 import java.sql.Connection;
 import java.sql.DriverManager;
 
-/**
- *
- * @author dmont
- */
+
 public class Conexion {
-    
+  
    Connection conectar =null;
    String usuario = "root";
    String contrasenia = "1234";
@@ -28,6 +26,7 @@ public class Conexion {
            Class.forName("com.mysql.jdbc.Driver");
            conectar = DriverManager.getConnection(cadena,usuario,contrasenia);
            System.out.println("Conexion exitosa");
+         
            
        }catch(Exception e){
            e.printStackTrace();
