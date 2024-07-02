@@ -55,6 +55,7 @@ public class Validar extends HttpServlet {
         processRequest(request, response);
         
         String accion = request.getParameter("accion");
+     
         
         if(accion.equalsIgnoreCase("Ingresar")){
             String user = request.getParameter("txtuser");
@@ -67,7 +68,7 @@ public class Validar extends HttpServlet {
     
                  request.setAttribute("datos",emp);
                 
-                request.getRequestDispatcher("Controlador?accion=Principal").forward(request, response);
+                request.getRequestDispatcher("Controlador?menu=Principal").forward(request, response);
             }else{
                 request.getRequestDispatcher("index.jsp").forward(request, response);
             }
